@@ -27,7 +27,7 @@ session_start();
 }
 ?>
 <head>
-<title>Test</title>
+<title>Login Page | Test</title>
 </head>
 
 <body>
@@ -36,5 +36,13 @@ session_start();
 	<input type="password" id="password" name="password" />
 	<input type="submit" name="submit" />
 </form>
-<p><?php echo $errorMsg; ?></p>
+<?php
+	if(isset($errorMsg))
+	{
+		echo "<p class='error-msg'>";
+		echo $errorMsg;
+		echo "</p>";
+		unset($errorMsg);
+	}
+?>
 </body>

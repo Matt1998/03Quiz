@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Test Welcome</title>
+<title>Welcome | Test</title>
 </head>
 
 <body>
